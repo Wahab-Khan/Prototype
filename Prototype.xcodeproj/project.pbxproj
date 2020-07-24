@@ -13,6 +13,17 @@
 		A259F93024C37FDD003BE743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A259F92F24C37FDD003BE743 /* Assets.xcassets */; };
 		A259F93324C37FDD003BE743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A259F93224C37FDD003BE743 /* Preview Assets.xcassets */; };
 		A259F93624C37FDD003BE743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A259F93424C37FDD003BE743 /* LaunchScreen.storyboard */; };
+		A259F93E24C3803E003BE743 /* MainAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A259F93D24C3803E003BE743 /* MainAnimationView.swift */; };
+		A259F94024C38221003BE743 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A259F93F24C38221003BE743 /* SideMenu.swift */; };
+		A259F94224C390B5003BE743 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A259F94124C390B5003BE743 /* Home.swift */; };
+		A259F94424C390F5003BE743 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A259F94324C390F5003BE743 /* NavigationBar.swift */; };
+		A2C37A5324C7852F0043F7B1 /* BgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A5224C7852F0043F7B1 /* BgView.swift */; };
+		A2C37A5724C88B0B0043F7B1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A5624C88B0B0043F7B1 /* Login.swift */; };
+		A2C37A5B24C8E7D30043F7B1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A5A24C8E7D30043F7B1 /* BaseView.swift */; };
+		A2C37A5D24C9CC6B0043F7B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A5C24C9CC6B0043F7B1 /* MainView.swift */; };
+		A2C37A5F24C9D4D10043F7B1 /* MyCompanys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A5E24C9D4D10043F7B1 /* MyCompanys.swift */; };
+		A2C37A6124CA13790043F7B1 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A6024CA13790043F7B1 /* ViewRouter.swift */; };
+		A2C37A6324CB56FC0043F7B1 /* NavigateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A6224CB56FC0043F7B1 /* NavigateModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		A259F93224C37FDD003BE743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A259F93524C37FDD003BE743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A259F93724C37FDD003BE743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A259F93D24C3803E003BE743 /* MainAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAnimationView.swift; sourceTree = "<group>"; };
+		A259F93F24C38221003BE743 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		A259F94124C390B5003BE743 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A259F94324C390F5003BE743 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		A2C37A5224C7852F0043F7B1 /* BgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgView.swift; sourceTree = "<group>"; };
+		A2C37A5624C88B0B0043F7B1 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A2C37A5A24C8E7D30043F7B1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A2C37A5C24C9CC6B0043F7B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A2C37A5E24C9D4D10043F7B1 /* MyCompanys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompanys.swift; sourceTree = "<group>"; };
+		A2C37A6024CA13790043F7B1 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		A2C37A6224CB56FC0043F7B1 /* NavigateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +85,17 @@
 				A259F93424C37FDD003BE743 /* LaunchScreen.storyboard */,
 				A259F93724C37FDD003BE743 /* Info.plist */,
 				A259F93124C37FDD003BE743 /* Preview Content */,
+				A259F93D24C3803E003BE743 /* MainAnimationView.swift */,
+				A259F93F24C38221003BE743 /* SideMenu.swift */,
+				A259F94124C390B5003BE743 /* Home.swift */,
+				A259F94324C390F5003BE743 /* NavigationBar.swift */,
+				A2C37A5224C7852F0043F7B1 /* BgView.swift */,
+				A2C37A5624C88B0B0043F7B1 /* Login.swift */,
+				A2C37A5A24C8E7D30043F7B1 /* BaseView.swift */,
+				A2C37A5C24C9CC6B0043F7B1 /* MainView.swift */,
+				A2C37A5E24C9D4D10043F7B1 /* MyCompanys.swift */,
+				A2C37A6024CA13790043F7B1 /* ViewRouter.swift */,
+				A2C37A6224CB56FC0043F7B1 /* NavigateModifier.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -148,6 +181,17 @@
 			files = (
 				A259F92A24C37FDB003BE743 /* AppDelegate.swift in Sources */,
 				A259F92C24C37FDB003BE743 /* SceneDelegate.swift in Sources */,
+				A259F94024C38221003BE743 /* SideMenu.swift in Sources */,
+				A2C37A6124CA13790043F7B1 /* ViewRouter.swift in Sources */,
+				A2C37A5324C7852F0043F7B1 /* BgView.swift in Sources */,
+				A259F93E24C3803E003BE743 /* MainAnimationView.swift in Sources */,
+				A259F94424C390F5003BE743 /* NavigationBar.swift in Sources */,
+				A2C37A5724C88B0B0043F7B1 /* Login.swift in Sources */,
+				A2C37A5F24C9D4D10043F7B1 /* MyCompanys.swift in Sources */,
+				A2C37A6324CB56FC0043F7B1 /* NavigateModifier.swift in Sources */,
+				A2C37A5D24C9CC6B0043F7B1 /* MainView.swift in Sources */,
+				A2C37A5B24C8E7D30043F7B1 /* BaseView.swift in Sources */,
+				A259F94224C390B5003BE743 /* Home.swift in Sources */,
 				A259F92E24C37FDB003BE743 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

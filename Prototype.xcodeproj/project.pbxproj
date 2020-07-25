@@ -24,6 +24,7 @@
 		A2C37A5F24C9D4D10043F7B1 /* MyCompanys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A5E24C9D4D10043F7B1 /* MyCompanys.swift */; };
 		A2C37A6124CA13790043F7B1 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A6024CA13790043F7B1 /* ViewRouter.swift */; };
 		A2C37A6324CB56FC0043F7B1 /* NavigateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A6224CB56FC0043F7B1 /* NavigateModifier.swift */; };
+		A2C37A6624CB9B540043F7B1 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A6524CB9B530043F7B1 /* ListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A2C37A5E24C9D4D10043F7B1 /* MyCompanys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompanys.swift; sourceTree = "<group>"; };
 		A2C37A6024CA13790043F7B1 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		A2C37A6224CB56FC0043F7B1 /* NavigateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateModifier.swift; sourceTree = "<group>"; };
+		A2C37A6524CB9B530043F7B1 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				A2C37A5E24C9D4D10043F7B1 /* MyCompanys.swift */,
 				A2C37A6024CA13790043F7B1 /* ViewRouter.swift */,
 				A2C37A6224CB56FC0043F7B1 /* NavigateModifier.swift */,
+				A2C37A6524CB9B530043F7B1 /* ListItem.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C37A6624CB9B540043F7B1 /* ListItem.swift in Sources */,
 				A259F92A24C37FDB003BE743 /* AppDelegate.swift in Sources */,
 				A259F92C24C37FDB003BE743 /* SceneDelegate.swift in Sources */,
 				A259F94024C38221003BE743 /* SideMenu.swift in Sources */,

@@ -35,7 +35,8 @@ struct MainAnimationView: View {
                     MyCompanys()
                 }
                 
-            }.onTapGesture {
+            }
+            .onTapGesture {
                 self.router.isShowMenu.toggle()
             }
             .modifier(BaseViewStyle(isShowMenu: router.isShowMenu))

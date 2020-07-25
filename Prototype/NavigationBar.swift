@@ -11,19 +11,16 @@ import SwiftUI
 struct NavigationBar: View {
     var title : String
     var body: some View {
-//        VStack {
             HStack{
-                HStack {
-                    Image(systemName: "sidebar.left")
-                        .font(.title)
-                }
-                .frame(width: 50.0, height: 50.0)
-                .background(Color.white)
-                .cornerRadius(25)
-                .shadow(radius: 20)
-                .padding(.trailing)
-                .onTapGesture {
-                    
+                Image(systemName: "sidebar.left")
+                    .font(.title)
+                    .frame(width: 50.0, height: 50.0)
+                    .background(Color.white)
+                    .clipShape(Circle())
+                    .shadow(radius: 20)
+                    .padding(.trailing)
+                    .onTapGesture {
+                        
                 }
                 
                 Text(title)
@@ -32,9 +29,11 @@ struct NavigationBar: View {
                 
                 Spacer()
                     
-            }.padding(.horizontal)
+                }
+            .frame(height: 60)
+            .padding(.horizontal)
+            .background(Color.white)
      
-//        }.background(Color.blue)
     }
 }
 
@@ -43,8 +42,3 @@ struct NavigationBar_Previews: PreviewProvider {
         NavigationBar(title: "Home")
     }
 }
-
-
-//protocol MenuTapped {
-//    openSide
-//}

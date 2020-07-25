@@ -11,14 +11,22 @@ import SwiftUI
 struct Home: View {
     var body: some View {
  
-            NavigationView{
-                    VStack {
-                        NavigationBar(title: "Home")
-                            List(0 ..< 10) { item in
-                                Text("this is test \(item)")
-                            }
+        NavigationView{
+            VStack{
+                NavigationBar(title: "Home")
+//                NavigationLink(destination: Text("1")){
+                    List(0 ..< 100) { item in
+                        ListItem()
+                        .listRowInsets(EdgeInsets())
                     }
+//                    .offset(y:-18)
+//                }.buttonStyle(PlainButtonStyle())
             }
+        }
+//        .navigationBarTitle("")
+//        .navigationBarHidden(true)
+//        .navigationBarTitle("Home")
+//        .navigationBarHidden(true)
 
     }
 }

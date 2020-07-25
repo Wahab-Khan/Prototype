@@ -25,6 +25,7 @@
 		A2C37A6124CA13790043F7B1 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A6024CA13790043F7B1 /* ViewRouter.swift */; };
 		A2C37A6324CB56FC0043F7B1 /* NavigateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A6224CB56FC0043F7B1 /* NavigateModifier.swift */; };
 		A2C37A6624CB9B540043F7B1 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A6524CB9B530043F7B1 /* ListItem.swift */; };
+		A2C37A6824CBCD590043F7B1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37A6724CBCD580043F7B1 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		A2C37A6024CA13790043F7B1 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		A2C37A6224CB56FC0043F7B1 /* NavigateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateModifier.swift; sourceTree = "<group>"; };
 		A2C37A6524CB9B530043F7B1 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		A2C37A6724CBCD580043F7B1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				A2C37A6024CA13790043F7B1 /* ViewRouter.swift */,
 				A2C37A6224CB56FC0043F7B1 /* NavigateModifier.swift */,
 				A2C37A6524CB9B530043F7B1 /* ListItem.swift */,
+				A2C37A6724CBCD580043F7B1 /* DetailView.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				A259F93E24C3803E003BE743 /* MainAnimationView.swift in Sources */,
 				A259F94424C390F5003BE743 /* NavigationBar.swift in Sources */,
 				A2C37A5724C88B0B0043F7B1 /* Login.swift in Sources */,
+				A2C37A6824CBCD590043F7B1 /* DetailView.swift in Sources */,
 				A2C37A5F24C9D4D10043F7B1 /* MyCompanys.swift in Sources */,
 				A2C37A6324CB56FC0043F7B1 /* NavigateModifier.swift in Sources */,
 				A2C37A5D24C9CC6B0043F7B1 /* MainView.swift in Sources */,

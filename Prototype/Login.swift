@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct Login: View {
+    
+    var router = ViewRouter()
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -16,7 +19,7 @@ struct Login: View {
     //make home as root after sucessful login 
     func goHome() {
         if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UIHostingController(rootView: Home())
+            window.rootViewController = UIHostingController(rootView: Home(router: router))
             window.makeKeyAndVisible()
         }
     }
@@ -24,6 +27,6 @@ struct Login: View {
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
-        Login()
+        Login(router: ViewRouter())
     }
 }

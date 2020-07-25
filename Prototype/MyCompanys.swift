@@ -10,20 +10,24 @@ import SwiftUI
 
 struct MyCompanys: View {
     
+    @ObservedObject var router : ViewRouter
+    
     var body: some View {
         NavigationView{
                 VStack {
-                    NavigationBar(title: "My Compnayes")
+                    NavigationBar(title: "My Compnayes", router: router)
                         List(0 ..< 10) { item in
                             Text("Hello, Companys! \(item)")
                         }
                 }
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
         }
     }
 }
 
 struct MyCompanys_Previews: PreviewProvider {
     static var previews: some View {
-        MyCompanys()
+        MyCompanys(router: ViewRouter())
     }
 }

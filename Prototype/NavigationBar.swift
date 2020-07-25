@@ -10,6 +10,8 @@ import SwiftUI
 
 struct NavigationBar: View {
     var title : String
+//    var function : () -> Void
+    @ObservedObject var router : ViewRouter
     var body: some View {
             HStack{
                 Image(systemName: "sidebar.left")
@@ -20,7 +22,8 @@ struct NavigationBar: View {
                     .shadow(radius: 20)
                     .padding(.trailing)
                     .onTapGesture {
-                        
+//                        self.function()
+                        self.router.isShowMenu.toggle()
                 }
                 
                 Text(title)
@@ -39,6 +42,6 @@ struct NavigationBar: View {
 
 struct NavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationBar(title: "Home")
+        NavigationBar(title: "Home", router: ViewRouter())
     }
 }

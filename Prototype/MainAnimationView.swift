@@ -15,8 +15,7 @@ struct MainAnimationView: View {
     var body: some View {
         
         ZStack{
-            LinearGradient(gradient: Gradient(colors:[Color("PrimaryColorOpacity"),Color("PrimaryColorOpacity")]), startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
+            BackGroundGradient(isShowMenu: router.isShowMenu)
             
             
             SideMenu(viewRouter: self.router)
@@ -28,21 +27,25 @@ struct MainAnimationView: View {
       
             BaseView{
                 if router.currentPage == "Home"{
-                    Home()
+                    Home(router: router)
+//                    .modifier(BaseViewStyle(isShowMenu: router.isShowMenu))
                 }else if router.currentPage == "Finance Report"{
-                    MyCompanys()
+                    MyCompanys(router: router)
+//                    .modifier(BaseViewStyle(isShowMenu: router.isShowMenu))
                 }else if router.currentPage == "My Companys"{
-                    MyCompanys()
+                    MyCompanys(router: router)
+//                    .modifier(BaseViewStyle(isShowMenu: router.isShowMenu))
                 }
                 
-            }
-            .onTapGesture {
-                self.router.isShowMenu.toggle()
             }
             .modifier(BaseViewStyle(isShowMenu: router.isShowMenu))
             
             
         }
+    }
+    
+    func toggleMenu(){
+        router.isShowMenu.toggle()
     }
 }
 
@@ -66,7 +69,7 @@ struct BlankView : View {
             ,Color("PrimaryColorOpacity")])
             ,startPoint: .top
             ,endPoint: .bottom)
-            .edgesIgnoringSafeArea(.all)
+//            .edgesIgnoringSafeArea(isShowMenu ? .all : .horizontal)
     }
 }
 
@@ -79,7 +82,8 @@ struct BaseViewStyle: ViewModifier {
             .scaleEffect(isShowMenu ? 0.7 : 1)
             .offset(x : isShowMenu ? 200 : 0)
             .animation(.easeInOut)
-            .edgesIgnoringSafeArea(.all)
+//            .edgesIgnoringSafeArea(isShowMenu ? .all : .horizontal)
+//        .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -94,6 +98,16 @@ struct BlankViewStyle: ViewModifier {
             .blendMode(.hue)
             .opacity(0.8)
             .animation(.easeInOut(duration: 0.5))
-            .edgesIgnoringSafeArea(.all)
+//           .edgesIgnoringSafeArea(isShowMenu ? .all : .horizontal)
+//        .edgesIgnoringSafeArea(.all)
+    }
+}
+
+struct BackGroundGradient: View {
+    var isShowMenu : Bool
+    var body: some View {
+        LinearGradient(gradient: Gradient(colors:[Color("PrimaryColorOpacity"),Color("PrimaryColorOpacity")]), startPoint: .top, endPoint: .bottom)
+//            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(isShowMenu ? .all : .horizontal)
     }
 }

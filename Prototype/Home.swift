@@ -22,9 +22,7 @@ struct Home: View {
                     List(0 ..< 100) { item in
                         NavigationLink(destination: DetailView()){
                         ListItem()
-                        .listRowInsets(EdgeInsets())
                     }.buttonStyle(PlainButtonStyle())
-//                    .offset(y:-18)
                 }
             }
             .navigationBarTitle("")
